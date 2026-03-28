@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>在宅起業の強み診断 | 五方よし起業道場</title>
+    <meta name="description" content="15の質問から、あなたの在宅起業における強みを分析します。">
+    <!-- OGP Settings -->
+    <meta property="og:title" content="在宅起業の強み診断 | 五方よし起業道場">
+    <meta property="og:description" content="15の質問から、あなたの在宅起業における強みを分析します。">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts: Shippori Mincho -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- トップ画面 -->
+        <div id="start-screen" class="screen active">
+            <h1 class="title">在宅起業<br>強み診断</h1>
+            <p class="subtitle">15の質問から、あなたの起業における<br>「隠れた武器」を分析します。</p>
+            <button id="start-btn" class="btn primary-btn"><span>診断を始める</span></button>
+        </div>
+
+        <!-- 質問画面 -->
+        <div id="question-screen" class="screen">
+            <div class="progress-bar">
+                <div id="progress-indicator" class="progress-indicator"></div>
+            </div>
+            <p id="question-count" class="question-count">第1問 / 15</p>
+            <h2 id="question-text" class="question-text">読み込み中...</h2>
+            <div id="options-container" class="options-container">
+                <!-- 選択肢がJavaScriptで生成されます -->
+            </div>
+        </div>
+
+        <!-- ローディング画面 -->
+        <div id="loading-screen" class="screen">
+            <div class="loader-container">
+                <div class="loader-circle"></div>
+                <p>あなたの強みを分析中...</p>
+            </div>
+        </div>
+
+        <!-- 結果画面 -->
+        <div id="result-screen" class="screen">
+            <h2 class="result-title">分析完了</h2>
+            <div class="result-card">
+                <h3 id="result-type" class="result-type">あなたのタイプ</h3>
+                <div class="result-content">
+                    <p id="result-description" class="result-description">結果を生成中...</p>
+                </div>
+                <div class="result-footer">
+                    <p>from 五方よし起業道場</p>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <!-- SNS Share (Threads) -->
+                <a id="share-btn" class="btn share-btn" href="#" target="_blank" rel="noopener noreferrer">
+                    <svg viewBox="0 0 24 24" class="threads-icon" fill="currentColor">
+                        <path d="M16.92 11.233c-.015-.658-.168-1.284-.447-1.859M5.076 11.458C5.076 7.427 8.163 4.14 12 4.14c3.83 0 6.945 3.284 6.945 7.309 0 3.824-2.822 6.946-6.606 7.309v.006c-1.341.13-2.671-.24-3.766-.99M16.92 11.233c.15 1.554-.26 3.12-1.157 4.382-1.353 1.9-3.712 2.639-6.042 1.848-1.782-.605-3.08-2.227-3.238-4.085-.143-1.684.823-3.298 2.457-3.95m5.98 3.038v-5.228"/>
+                    </svg>
+                    <span>Threadsでシェアする</span>
+                </a>
+                <button id="retry-btn" class="btn text-btn">もう一度診断する</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
