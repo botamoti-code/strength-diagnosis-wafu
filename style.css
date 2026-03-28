@@ -365,6 +365,26 @@ body::after {
     stroke-linejoin: round;
 }
 
+.line-btn {
+    background-color: #06C755; /* LINE Green */
+    color: #fff;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(6, 199, 85, 0.2);
+}
+
+.line-btn:hover {
+    background-color: #05A546;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(6, 199, 85, 0.3);
+}
+
+.line-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .text-btn {
     background: none;
     color: var(--secondary-color);
