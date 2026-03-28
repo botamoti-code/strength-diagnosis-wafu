@@ -189,6 +189,8 @@ body::after {
     justify-content: flex-start;
     padding: 18px 24px;
     position: relative;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .option-btn:hover {
@@ -243,7 +245,8 @@ body::after {
     text-align: center;
     margin-bottom: 2.5rem;
     line-height: 1.6;
-    word-break: keep-all;
+    word-break: auto;
+    overflow-wrap: break-word;
 }
 
 .options-container {
